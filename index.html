@@ -1,12 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Mahdiyya Komilova — Architectural Designer</title>
-<meta name="description" content="Portfolio of Mahdiyya Komilova, Architectural Designer based in Tashkent. Open to freelance commissions worldwide.">
-</head>
-<body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Mahdiyya Komilova</title>
+<!-- NEXUM: English board, new site model with distance fade -->
+<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -61,6 +56,7 @@ html.js .rv:not(.in){opacity:0;transform:translateY(26px)}
 .peek{position:fixed;left:0;top:0;z-index:45;width:300px;aspect-ratio:4/3;background:var(--paper);border:1px solid var(--ink);color:var(--ink);pointer-events:none;opacity:0;transition:opacity .25s;will-change:transform}
 .peek.on{opacity:1}
 .peek svg{display:block;width:100%;height:100%}
+.peek img{display:block;width:100%;height:100%;object-fit:cover}
 @media (hover:none),(pointer:coarse){.cur,.peek{display:none}}
 html.cur-on .row{cursor:none}
 
@@ -146,8 +142,6 @@ html.cur-on .row{cursor:none}
   .row:hover .c-t{font-style:italic}
   .row:hover .c-arrow{transform:translate(4px,-4px)}
 }
-.rli.cta .c-t{font-style:italic;color:var(--mute)}
-.rli.cta .row:hover .c-t{color:inherit}
 @media (max-width:860px){
   .row{grid-template-columns:2.2rem minmax(0,1fr) 1.6rem;gap:2px 10px}
   .row .c-n{grid-column:1;grid-row:1}
@@ -158,40 +152,18 @@ html.cur-on .row{cursor:none}
 }
 
 /* about */
-.about .in{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:24px clamp(24px,4vw,64px);padding-block:clamp(56px,9vw,128px) clamp(24px,4vw,48px)}
-.about .label{color:var(--mute);padding-top:.9em}
-.statement{margin:0;font:500 clamp(28px,4.5vw,66px)/1.07 var(--display);letter-spacing:-.012em}
-.statement .w{opacity:.38;transition:opacity .25s}
-.statement .w.on{opacity:1}
-.ledger{margin:clamp(28px,4vw,56px) 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;border-top:1px solid var(--ink)}
-.ledger div{padding:14px 16px 18px 0;border-bottom:1px solid var(--line)}
-.ledger dt{color:var(--mute);margin:0 0 4px}
-.ledger dd{margin:0;font-size:17px}
-.svc{grid-column:2}
-.svc-item{border-top:1px solid var(--ink)}
-.svc-item:last-child{border-bottom:1px solid var(--ink)}
-.svc-btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:clamp(14px,2vw,24px) 0;background:none;border:0;cursor:pointer;text-align:left;font:600 clamp(26px,3.6vw,52px)/1.05 var(--display);letter-spacing:-.01em}
 .plus{position:relative;flex:none;width:28px;height:28px;border:1.5px solid currentColor;transition:background .3s,color .3s,transform .5s cubic-bezier(.2,.8,.2,1)}
 .plus::before,.plus::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;margin:-1px 0 0 -6px;background:currentColor}
 .plus::after{transform:rotate(90deg);transition:transform .4s}
-.svc-btn[aria-expanded="true"] .plus{background:var(--cobalt);color:var(--on-cobalt);border-color:var(--cobalt);transform:rotate(180deg)}
-.svc-btn[aria-expanded="true"] .plus::after{transform:rotate(0)}
-@media (hover:hover){.svc-btn:hover .c-name{font-style:italic}}
-.svc-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s cubic-bezier(.2,.8,.2,1)}
-.svc-panel>div{overflow:hidden}
-.svc-panel p{margin:0 0 22px;max-width:54ch;color:var(--mute);font-size:17px}
-.svc-btn[aria-expanded="true"]+.svc-panel{grid-template-rows:1fr}
-@media (max-width:860px){.about .in{grid-template-columns:1fr}.svc{grid-column:1}.about .label{padding-top:0}}
 
 /* contact */
 .contact{background:var(--ink);color:var(--paper);margin-top:clamp(56px,9vw,128px)}
 .contact .in{padding-block:clamp(44px,7vw,96px) clamp(28px,4vw,48px)}
 .big-line{margin:0 0 clamp(28px,4vw,56px);font:800 clamp(52px,11.5vw,176px)/.88 var(--display);letter-spacing:-.025em}
 .big-line em{font-weight:400;display:block}
-.c-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,5vw,80px);align-items:start}
+.c-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,5vw,80px);align-items:start}
 @media (max-width:860px){.c-grid{grid-template-columns:1fr}}
 .addr{margin:6px 0 18px;font:500 clamp(24px,3.2vw,44px)/1.05 var(--display);overflow-wrap:anywhere}
-.cnote{margin:16px 0 0;max-width:42ch;font-size:14px;opacity:.7}
 .btn{padding:14px 22px;border:0;background:var(--cobalt);color:var(--on-cobalt);cursor:pointer;font:500 12px var(--mono);letter-spacing:.09em;text-transform:uppercase;transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s cubic-bezier(.2,.8,.2,1)}
 @media (hover:hover){.btn:hover{transform:translate(-4px,-4px);box-shadow:4px 4px 0 var(--paper)}}
 .contact .label{opacity:.65;margin:0 0 8px}
@@ -211,14 +183,24 @@ footer{background:var(--ink);color:var(--paper);border-top:1px solid color-mix(i
 footer .in{color:color-mix(in srgb,var(--paper) 70%,transparent)}
 footer a{text-decoration:none}
 
-.social{margin-top:30px}
-.soc{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-.soc a{display:inline-flex;align-items:center;gap:10px;padding:11px 16px;border:1px solid color-mix(in srgb,var(--paper) 45%,transparent);color:var(--paper);text-decoration:none;transition:background .25s,color .25s,border-color .25s,transform .3s cubic-bezier(.2,.8,.2,1)}
+.social{margin-top:0}
+.soc{list-style:none;margin:8px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;max-width:420px}
+.soc a{display:flex;align-items:center;gap:10px;padding:11px 16px;border:1px solid color-mix(in srgb,var(--paper) 45%,transparent);color:var(--paper);text-decoration:none;transition:background .25s,color .25s,border-color .25s,transform .3s cubic-bezier(.2,.8,.2,1)}
 .soc .ico{width:18px;height:18px;flex:none}
-.soc a span{display:inline-block;transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.soc a span{display:inline-block;margin-left:auto;transition:transform .3s cubic-bezier(.2,.8,.2,1)}
 @media (hover:hover){.soc a:hover{background:var(--paper);color:var(--ink);border-color:var(--paper);transform:translateY(-3px)}.soc a:hover span{transform:translate(2px,-2px)}}
 
 /* drawings */
+/* dark mode: contact + footer stay dark */
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .contact,:root:not([data-theme="light"]) footer{--ink:#14161b;--paper:#f0f0ec;--ink-rgb:20,22,27;--paper-rgb:240,240,236;border-top:1px solid var(--line)}}
+:root[data-theme="dark"] .contact,:root[data-theme="dark"] footer{--ink:#14161b;--paper:#f0f0ec;--ink-rgb:20,22,27;--paper-rgb:240,240,236;border-top:1px solid var(--line)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) footer{border-top-color:color-mix(in srgb,#f0f0ec 25%,transparent)}}
+:root[data-theme="dark"] footer{border-top-color:color-mix(in srgb,#f0f0ec 25%,transparent)}
+.d-right{display:flex;align-items:center;gap:16px}
+.d-tools{display:flex;align-items:center;gap:8px}
+.d-tools .lang button{padding:9px 10px}
+.d-tools .tbtn{padding:9px 12px}
+@media (max-width:620px){.d-bar #dCount{display:none}.d-right{gap:8px}.d-tools{gap:6px}.d-btn{padding:9px 10px}.d-pair{gap:6px}.d-tools .lang button{padding:9px 8px}.d-tools .tbtn{padding:9px 10px}.d-tools .tbtn span{display:none}#dPrev,#dNext{font-size:0;padding:9px 13px}#dPrev::before,#dNext::before{font-size:12px}#dPrev::before{content:"\2190"}#dNext::before{content:"\2192"}}
 .dwg{fill:none;stroke:currentColor;stroke-width:1.2;stroke-linecap:square;color:var(--ink)}
 .dwg .th{stroke-width:2.4}
 .dwg .pc{stroke-width:7;stroke-linejoin:miter;stroke-linecap:butt}
@@ -257,6 +239,55 @@ footer a{text-decoration:none}
 .facts div{display:grid;grid-template-columns:7rem 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
 .facts dt{color:var(--mute)}
 .facts dd{margin:0}
+.v3d-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding-bottom:10px}
+.v3d-btns{display:flex;flex-wrap:wrap;gap:6px}
+.v3d-btns button{font:inherit;letter-spacing:inherit;text-transform:inherit;padding:7px 11px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.v3d-btns button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.v3d-btns button[hidden]{display:none}
+@media (hover:hover){.v3d-btns button:hover{background:var(--ink);color:var(--paper)}}
+.v3d-stage{position:relative;width:100%;aspect-ratio:16/9;min-height:300px;box-sizing:border-box;border:1px solid var(--ink);background:#0b0c0f url(img/nexum-night-1.jpg) center/cover;overflow:hidden;touch-action:pan-y}
+.v3d-stage.live{background:var(--panel)}
+.v3d-load{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:6px;padding:16px 24px;border:1px solid #f0f0ec;background:rgba(11,12,15,.72);color:#f0f0ec;cursor:pointer;font:inherit;text-transform:inherit;letter-spacing:inherit}
+.v3d-load small{opacity:.65;font:inherit;font-size:11px}
+.v3d-load[hidden]{display:none}
+@media (hover:hover){.v3d-load:hover{background:#f0f0ec;color:#0b0c0f}}
+.v3d-hint{margin:10px 0 0;color:var(--mute)}
+
+.bd{margin-top:clamp(28px,4vw,56px)}
+.bds{display:grid;gap:14px;margin-top:clamp(28px,4vw,56px)}
+.bds .bd-t{position:static;width:100%}
+.bds-g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.6vw,20px)}
+.bds a.zoom{display:block;cursor:zoom-in}
+.bds img{display:block;width:100%;height:auto;border:1px solid var(--ink);background:#000}
+@media (max-width:860px){.bds-g{grid-template-columns:1fr}}
+.gal.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.gal.g2 img{aspect-ratio:16/10;object-fit:cover}
+.gal.g1{grid-template-columns:minmax(0,1fr)}
+.gal.g1 img{aspect-ratio:21/9;object-fit:cover;object-position:50% 65%}
+@media (max-width:860px){.gal.g2{grid-template-columns:1fr}}
+.tools-l{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.tools-l li{display:inline-flex;align-items:center;gap:8px;padding:4px 10px 4px 4px;border:1px solid var(--ink)}
+.tools-l .tic{width:26px;height:26px;padding:3px;background:var(--ink);color:var(--paper);flex:none}
+.tools-l b{display:grid;place-items:center;min-width:26px;height:26px;padding:0 4px;background:var(--ink);color:var(--paper);font:700 12px var(--mono);letter-spacing:0}
+.vid{position:relative;width:100%;aspect-ratio:16/9;border:1px solid var(--ink);background:#0b0c0f;overflow:hidden}
+.vid img,.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover;display:block}
+.vid .vlink{position:absolute;inset:0;display:grid;place-items:center;text-decoration:none}
+.vid .pl{display:flex;align-items:center;gap:12px;padding:12px 18px;background:rgba(11,12,15,.78);color:#f0f0ec;border:1px solid #f0f0ec;transition:background .25s,color .25s}
+.vid .pl i{width:0;height:0;border-left:12px solid currentColor;border-top:8px solid transparent;border-bottom:8px solid transparent}
+@media (hover:hover){.vid .vlink:hover .pl{background:#f0f0ec;color:#0b0c0f}}
+.ph{margin:0}
+.ph img,.more img{display:block;width:100%;height:auto;background:var(--panel);border:1px solid var(--ink)}
+.ph figcaption,.more figcaption{display:flex;justify-content:space-between;gap:12px;padding-top:8px;color:var(--mute)}
+.more{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(28px,4vw,56px);padding-bottom:clamp(32px,5vw,64px)}
+.v3d,.v3d-bar{min-width:0}
+.more[hidden]{display:none}
+.gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.6vw,20px)}
+.gal figure,.bd figure{margin:0}
+.bd{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,64px);align-items:start}
+.bd-t{border-top:1px solid var(--ink);padding-top:12px;display:flex;flex-direction:column;gap:10px;align-self:start;position:sticky;top:76px}
+.bd-t a{text-decoration:underline;text-underline-offset:3px;width:max-content}
+.bd a.zoom{display:block;cursor:zoom-in}
+@media (max-width:860px){.gal,.bd{grid-template-columns:1fr}.bd-t{position:static}}
 .sheet{margin:0;border:1px solid var(--ink);background:var(--panel)}
 .sheet svg{display:block;width:100%;height:auto;touch-action:pan-y;cursor:ew-resize}
 .tb{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink)}
@@ -302,8 +333,6 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;background:var(--sign
   .sec-title{font-size:clamp(72px,6.6vw,112px);line-height:.88}
   .row .c-t{font-size:clamp(26px,2.5vw,40px)}
   .row{padding-block:clamp(14px,1.5vw,22px)}
-  .statement{font-size:clamp(26px,2.45vw,40px);line-height:1.14}
-  .svc-btn{font-size:clamp(22px,1.9vw,30px)}
   .big-line{font-size:clamp(56px,6.8vw,108px);line-height:.92}
   .addr{font-size:clamp(22px,2vw,30px)}
   .d-title{font-size:clamp(36px,3.9vw,62px)}
@@ -312,7 +341,6 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;background:var(--sign
   .contact{margin-top:clamp(48px,6vw,88px)}
   .contact .in{padding-block:clamp(40px,5vw,72px) clamp(28px,3.4vw,44px)}
   .big-line{margin-bottom:clamp(24px,3vw,44px)}
-  .about .in{padding-block:clamp(48px,6.5vw,92px) clamp(20px,3vw,36px)}
 }
 </style>
 
@@ -328,7 +356,6 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;background:var(--sign
     </a>
     <nav class="nav m" aria-label="Main">
       <a href="#work" data-sec="work" data-i18n="nav.work">Work</a>
-      <a href="#about" data-sec="about" data-i18n="nav.about">About</a>
       <a href="#contact" data-sec="contact" data-i18n="nav.contact">Contact</a>
     </nav>
     <div class="tools">
@@ -356,7 +383,6 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;background:var(--sign
       <div class="hero-foot">
         <p class="tag" data-i18n="tag">Architecture that starts with a place, its memory and the people who will use it.</p>
         <div class="state m">
-          <span class="live"><i class="sq"></i><span data-i18n="open">Open to freelance commissions worldwide</span></span>
           <a class="cue" href="#work"><b>&darr;</b> <span data-i18n="selected">Selected work</span></a>
         </div>
       </div>
@@ -371,32 +397,10 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;background:var(--sign
         <h2 class="sec-title"><span data-i18n="nav.work">Work</span><sup id="cnt">02</sup></h2>
         <div class="chips m" role="group" aria-label="Filter projects" data-i18n-aria="a.filter" id="filters">
           <button class="chip" type="button" aria-pressed="true" data-f="All" data-i18n="f.all">All</button>
-          <button class="chip" type="button" aria-pressed="false" data-f="Cultural" data-i18n="type.Cultural">Cultural</button>
           <button class="chip" type="button" aria-pressed="false" data-f="Competition" data-i18n="type.Competition">Competition</button>
         </div>
       </div>
       <ol class="rows" id="rows"></ol>
-    </div>
-  </section>
-
-  <section class="sec about" id="about">
-    <div class="in">
-      <p class="label m rv" data-i18n="nav.about">About</p>
-      <div>
-        <p class="statement" id="statement">I design buildings that begin with a place, its memory and the people who will use it. Based in Tashkent, drawing for clients around the world.</p>
-        <dl class="ledger m rv">
-          <div><dt data-i18n="led.practice">Practice</dt><dd data-i18n="role">Architectural Designer</dd></div>
-          <div><dt data-i18n="led.based">Based in</dt><dd data-i18n="led.basedv">Tashkent, Uzbekistan</dd></div>
-          <div><dt data-i18n="led.works">Works with</dt><dd data-i18n="led.worksv">International clients</dd></div>
-          <div><dt data-i18n="led.time">Local time</dt><dd id="tz2">00:00</dd></div>
-        </dl>
-      </div>
-      <div class="svc rv" id="svc">
-        <div class="svc-item"><button class="svc-btn" type="button" aria-expanded="false" aria-controls="s1" id="b1"><span class="c-name" data-i18n="s1">Concept design</span><i class="plus"></i></button><div class="svc-panel" id="s1" role="region" aria-labelledby="b1"><div><p data-i18n="s1d">From the first diagram to a proposal you can present: massing, plans, sections and a clear story about why the building looks the way it does.</p></div></div></div>
-        <div class="svc-item"><button class="svc-btn" type="button" aria-expanded="false" aria-controls="s2" id="b2"><span class="c-name" data-i18n="s2">Exhibition design</span><i class="plus"></i></button><div class="svc-panel" id="s2" role="region" aria-labelledby="b2"><div><p data-i18n="s2d">Spatial narrative for museums and memorials: routes, sequences of rooms and display systems that carry the story.</p></div></div></div>
-        <div class="svc-item"><button class="svc-btn" type="button" aria-expanded="false" aria-controls="s3" id="b3"><span class="c-name" data-i18n="s3">Landscape and eco-tourism</span><i class="plus"></i></button><div class="svc-panel" id="s3" role="region" aria-labelledby="b3"><div><p data-i18n="s3d">Complexes planned around terrain, water and visitor flow, so the buildings sit lightly on their sites.</p></div></div></div>
-        <div class="svc-item"><button class="svc-btn" type="button" aria-expanded="false" aria-controls="s4" id="b4"><span class="c-name" data-i18n="s4">Competition entries</span><i class="plus"></i></button><div class="svc-panel" id="s4" role="region" aria-labelledby="b4"><div><p data-i18n="s4d">Concept development and presentation boards for architecture competitions, from first idea to final sheets.</p></div></div></div>
-      </div>
     </div>
   </section>
 
@@ -406,34 +410,18 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;background:var(--sign
       <div class="c-grid">
         <div class="rv">
           <p class="label m" data-i18n="c.write">Write to</p>
-          <p class="addr" id="addr">hello@komilova.example</p>
+          <p class="addr" id="addr">makhdiyyakomilova@gmail.com</p>
           <button class="btn" id="copyAddr" type="button" data-i18n="c.copy">Copy address</button>
-          <div class="social" role="group" aria-label="Social links" data-i18n-aria="a.social">
+        </div>
+        <div class="social rv" role="group" aria-label="Social links" data-i18n-aria="a.social">
             <p class="label m" data-i18n="c.follow">Follow</p>
             <ul class="soc m">
               <li><a href="https://www.instagram.com/mahdiyyakomilova" target="_blank" rel="noopener noreferrer"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>Instagram <span aria-hidden="true">&nearr;</span></a></li>
               <li><a href="https://pin.it/3FHGUzmS3" target="_blank" rel="noopener noreferrer"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M9.3 13.2C8 10.6 9.8 7.6 12.4 7.6c2.5 0 3.7 2 3.2 4.1-.5 2-2.2 2.900-3.600 2.200"/><path d="M11.900 13.900L10.600 18.300"/></svg>Pinterest <span aria-hidden="true">&nearr;</span></a></li>
               <li><a href="https://youtube.com/@mahdiyyakomilova" target="_blank" rel="noopener noreferrer"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.2v5.6l4.800-2.800z" fill="currentColor" stroke="none"/></svg>YouTube <span aria-hidden="true">&nearr;</span></a></li>
+              <li><a href="https://www.behance.net/mahdiyyakomilova" target="_blank" rel="noopener noreferrer"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.500 6.500h4.800a2.600 2.600 0 0 1 0 5.200H2.500m0 0h5.400a3.100 3.100 0 0 1 0 6.200H2.500z"/><path d="M13.500 6.500h6"/><path d="M13.500 14.200h7a3.500 3.500 0 1 0-1 2.500"/></svg>Behance <span aria-hidden="true">&nearr;</span></a></li>
             </ul>
           </div>
-          <p class="cnote" data-i18n="c.note">Placeholder address. This page does not send messages; the brief on the right is written for you to paste into an email.</p>
-        </div>
-        <form id="brief" class="rv" autocomplete="off">
-          <fieldset>
-            <legend class="m" data-i18n="c.need">What do you need?</legend>
-            <div class="chips m" id="kinds">
-              <button class="chip" type="button" aria-pressed="true" data-k="concept" data-i18n="kc.concept">Concept</button>
-              <button class="chip" type="button" aria-pressed="false" data-k="exhibition" data-i18n="kc.exhibition">Exhibition</button>
-              <button class="chip" type="button" aria-pressed="false" data-k="landscape" data-i18n="kc.landscape">Landscape</button>
-              <button class="chip" type="button" aria-pressed="false" data-k="competition" data-i18n="kc.competition">Competition</button>
-            </div>
-          </fieldset>
-          <div><label class="fl m" for="nm" data-i18n="c.name">Your name</label><input id="nm" type="text" placeholder="Your name" data-i18n-ph="c.nameph"></div>
-          <div><label class="fl m" for="when" data-i18n="c.time">Timeline</label><select id="when"><option data-i18n="w1">within a month</option><option selected data-i18n="w2">in one to three months</option><option data-i18n="w3">with a flexible deadline</option></select></div>
-          <div><label class="fl m" for="msg" data-i18n="c.about">About the project</label><textarea id="msg" rows="3" placeholder="A lakeside eco-lodge, 40 rooms, needs a concept and masterplan." data-i18n-ph="c.msgph"></textarea></div>
-          <div><label class="fl m" for="out" data-i18n="c.brief">Your brief</label><textarea id="out" rows="7" readonly></textarea></div>
-          <div><button class="btn" id="copyBrief" type="button" data-i18n="c.copyb">Copy brief</button></div>
-        </form>
       </div>
     </div>
   </section>
@@ -442,7 +430,6 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;background:var(--sign
 <footer id="foot">
   <div class="in m">
     <span>&copy; 2026 Mahdiyya Komilova</span>
-    <span data-i18n="foot.sample">Sample content. Replace the placeholders with your projects.</span>
     <a href="#top" data-i18n="foot.top">Back to top &uarr;</a>
   </div>
 </footer>
@@ -452,9 +439,15 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;background:var(--sign
     <div class="in">
       <a class="d-btn m" id="dClose" href="#work" data-i18n="d.index">&larr; Index</a>
       <span class="m" id="dCount">01 / 03</span>
+      <div class="d-right">
+      <div class="d-tools">
+        <div class="lang m" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="uz" aria-pressed="false">UZ</button></div>
+        <button class="tbtn m" id="theme2" type="button" aria-label="Switch colour theme"><i></i><span id="themeLabel2">Dark</span></button>
+      </div>
       <div class="d-pair">
         <a class="d-btn m" id="dPrev" href="#work" aria-label="Previous project" data-i18n-aria="a.prev" data-i18n="d.prev">&larr; Prev</a>
         <a class="d-btn m" id="dNext" href="#work" aria-label="Next project" data-i18n-aria="a.next" data-i18n="d.next">Next &rarr;</a>
+      </div>
       </div>
     </div>
   </div>
@@ -467,7 +460,7 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;background:var(--sign
         <p class="d-hint" data-i18n="d.hint">Add the story, photos and real drawings of this project here.</p>
         <dl class="facts m" id="dFacts"></dl>
       </div>
-      <div>
+      <div id="dDraw">
         <figure class="sheet">
           <svg class="dwg anim" id="plan" viewBox="0 0 800 600" role="img" aria-label="Illustrative plan with a movable section cut"></svg>
           <figcaption class="tb m"><span id="tbSheet">Sheet A-101</span><span data-i18n="scale">Scale 1:500</span><span data-i18n="illus">Illustrative drawing</span></figcaption>
@@ -478,6 +471,25 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;background:var(--sign
           <input id="cut" type="range" min="40" max="760" step="1" value="400" aria-label="Move section cut A to A" data-i18n-aria="a.cut">
         </div>
       </div>
+      <div id="dPhoto" hidden></div>
+    </div>
+    <div class="more" id="dMore" hidden>
+      <div class="v3d" id="dViewer" hidden>
+        <div class="v3d-bar m"><span data-i18n="v3d.title">3D model</span>
+          <div class="v3d-btns" id="v3dBtns" hidden>
+            <button type="button" data-v="orbit" aria-pressed="true" data-i18n="v3d.orbit">Orbit</button>
+            <button type="button" data-v="close" aria-pressed="false" data-i18n="v3d.close">Close-up</button>
+            <button type="button" data-v="top" aria-pressed="false" data-i18n="v3d.top">Top view</button>
+            <button type="button" data-z="in" aria-label="Zoom in" data-i18n-aria="v3d.zin">+</button>
+            <button type="button" data-z="out" aria-label="Zoom out" data-i18n-aria="v3d.zout">&minus;</button>
+          </div>
+        </div>
+        <div class="v3d-stage" id="v3dStage">
+          <button type="button" class="v3d-load m" id="v3dLoad"><span id="v3dLoadT" data-i18n="v3d.load">Load 3D model</span><small>1.2 MB</small></button>
+        </div>
+        <p class="v3d-hint m" data-i18n="v3d.hint">Drag to rotate · Ctrl + scroll or pinch to zoom</p>
+      </div>
+      <div id="dMoreBody"></div>
     </div>
     <a class="nextbig" id="dNextBig" href="#work"><span class="m" style="color:var(--mute)" data-i18n="nextp">Next project</span><strong id="dNextTitle"></strong></a>
   </div>
@@ -1991,7 +2003,7 @@ const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
 
 /* ---------- language (English / Uzbek, Latin) ---------- */
-const I18N={"en": {"role": "Architectural Designer", "city": "Tashkent", "nav.work": "Work", "nav.about": "About", "nav.contact": "Contact", "meta": "Architectural Designer · Tashkent, UZ", "tag": "Architecture that starts with a place, its memory and the people who will use it.", "open": "Open to freelance commissions worldwide", "selected": "Selected work", "f.all": "All", "type.Cultural": "Cultural", "type.Competition": "Competition", "row.cta": "Your project here", "row.brief": "Brief", "row.any": "Anywhere", "row.talk": "Let’s talk", "statement": "I design buildings that begin with a place, its memory and the people who will use it. Based in Tashkent, drawing for clients around the world.", "led.practice": "Practice", "led.based": "Based in", "led.basedv": "Tashkent, Uzbekistan", "led.works": "Works with", "led.worksv": "International clients", "led.time": "Local time", "s1": "Concept design", "s1d": "From the first diagram to a proposal you can present: massing, plans, sections and a clear story about why the building looks the way it does.", "s2": "Exhibition design", "s2d": "Spatial narrative for museums and memorials: routes, sequences of rooms and display systems that carry the story.", "s3": "Landscape and eco-tourism", "s3d": "Complexes planned around terrain, water and visitor flow, so the buildings sit lightly on their sites.", "s4": "Competition entries", "s4d": "Concept development and presentation boards for architecture competitions, from first idea to final sheets.", "c.h1": "Have a site?", "c.h2": "Let’s draw it.", "c.write": "Write to", "c.copy": "Copy address", "c.follow": "Follow", "a.social": "Social links", "c.note": "Placeholder address. This page does not send messages; the brief on the right is written for you to paste into an email.", "c.need": "What do you need?", "kc.concept": "Concept", "kc.exhibition": "Exhibition", "kc.landscape": "Landscape", "kc.competition": "Competition", "k.concept": "concept design", "k.exhibition": "exhibition design", "k.landscape": "landscape and eco-tourism design", "k.competition": "a competition entry", "c.name": "Your name", "c.nameph": "Your name", "c.time": "Timeline", "w1": "within a month", "w2": "in one to three months", "w3": "with a flexible deadline", "c.about": "About the project", "c.msgph": "A lakeside eco-lodge, 40 rooms, needs a concept and masterplan.", "c.brief": "Your brief", "c.copyb": "Copy brief", "copied": "Copied", "flashSel": "Selected", "foot.sample": "Sample content. Replace the placeholders with your projects.", "foot.top": "Back to top ↑", "d.index": "← Index", "d.prev": "← Prev", "d.next": "Next →", "d.hint": "Add the story, photos and real drawings of this project here.", "d.typology": "Typology", "d.location": "Location", "d.stage": "Stage", "sheet": "Sheet", "scale": "Scale 1:500", "illus": "Illustrative drawing", "section": "Section A–A", "nextp": "Next project", "level": "level", "dl.N": "N", "dl.DOME": "DOME", "dl.PLATFORM": "PLATFORM", "dl.AXIS": "AXIS", "dl.ENTRY": "ENTRY", "dl.CORE": "CORE", "dl.ROUTE": "ROUTE", "p.observatory.title": "Tashkent Observatory", "p.observatory.loc": "Tashkent, UZ", "p.observatory.stage": "Diploma, 2026", "p.observatory.desc": "Diploma project for an astronomical observatory in Tashkent, prepared for an architecture competition in Tbilisi, 2026.", "p.memorial.title": "Memorial Museum", "p.memorial.loc": "Mongolia", "p.memorial.stage": "Exhibition design", "p.memorial.desc": "Exhibition design for a memorial museum in Mongolia.", "m.arch": "Architecture", "m.exh": "Exhibition design", "m.land": "Landscape", "m.concept": "Concept design", "m.comp": "Competitions", "m.res": "Research", "dark": "Dark", "light": "Light", "brief.hello": "Hello Mahdiyya,", "brief.body": "I am {nm}. I would like to talk about {kind}, {when}.", "brief.nm": "[your name]", "brief.msg": "[a few lines about the project]", "a.brand": "Mahdiyya Komilova, to the top", "a.prev": "Previous project", "a.next": "Next project", "a.cut": "Move section cut A to A", "a.filter": "Filter projects"}, "uz": {"role": "Arxitektura dizayneri", "city": "Toshkent", "nav.work": "Ishlar", "nav.about": "Haqida", "nav.contact": "Aloqa", "meta": "Arxitektura dizayneri · Toshkent, UZ", "tag": "Arxitektura joydan, uning xotirasidan va undan foydalanadigan odamlardan boshlanadi.", "open": "Butun dunyo bo‘ylab frilans buyurtmalarga ochiqman", "selected": "Tanlangan ishlar", "f.all": "Hammasi", "type.Cultural": "Madaniy", "type.Competition": "Tanlov", "row.cta": "Sizning loyihangiz", "row.brief": "Topshiriq", "row.any": "Istalgan joy", "row.talk": "Gaplashamiz", "statement": "Men binolarni joydan, uning xotirasidan va undan foydalanadigan odamlardan boshlab loyihalayman. Toshkentda yashayman va dunyo bo‘ylab mijozlar uchun ishlayman.", "led.practice": "Kasbi", "led.based": "Joylashuvi", "led.basedv": "Toshkent, O‘zbekiston", "led.works": "Hamkorlik", "led.worksv": "Xalqaro mijozlar", "led.time": "Mahalliy vaqt", "s1": "Konsept dizayn", "s1d": "Dastlabki diagrammadan taqdim etishga tayyor taklifgacha: massing, rejalar, kesimlar va bino nega aynan shunday ko‘rinishda ekani haqida aniq hikoya.", "s2": "Ekspozitsiya dizayni", "s2d": "Muzeylar va yodgorliklar uchun fazoviy hikoya: yo‘nalishlar, xonalar ketma-ketligi va hikoyani olib yuruvchi ko‘rgazma tizimlari.", "s3": "Landshaft va ekoturizm", "s3d": "Relyef, suv va tashrif buyuruvchilar oqimi atrofida rejalashtirilgan majmualar, shunda binolar o‘z joyiga yengil o‘rnashadi.", "s4": "Tanlov loyihalari", "s4d": "Arxitektura tanlovlari uchun konsept ishlab chiqish va taqdimot taxtalari: birinchi g‘oyadan yakuniy listlargacha.", "c.h1": "Uchastkangiz bormi?", "c.h2": "Keling, uni chizamiz.", "c.write": "Yozing", "c.copy": "Manzilni nusxalash", "c.follow": "Kuzating", "a.social": "Ijtimoiy tarmoqlar", "c.note": "Vaqtinchalik manzil. Bu sahifa xabar yubormaydi; o‘ngdagi brif elektron pochtaga qo‘yish uchun yoziladi.", "c.need": "Sizga nima kerak?", "kc.concept": "Konsept", "kc.exhibition": "Ekspozitsiya", "kc.landscape": "Landshaft", "kc.competition": "Tanlov", "k.concept": "konsept dizayn", "k.exhibition": "ekspozitsiya dizayni", "k.landscape": "landshaft va ekoturizm dizayni", "k.competition": "tanlov loyihasi", "c.name": "Ismingiz", "c.nameph": "Ismingiz", "c.time": "Muddat", "w1": "bir oy ichida", "w2": "bir–uch oy ichida", "w3": "muddati moslashuvchan", "c.about": "Loyiha haqida", "c.msgph": "Ko‘l bo‘yidagi 40 xonali ekolodj, konsept va bosh reja kerak.", "c.brief": "Sizning brifingiz", "c.copyb": "Brifni nusxalash", "copied": "Nusxalandi", "flashSel": "Tanlandi", "foot.sample": "Namuna kontent. Matnlarni o‘z loyihalaringiz bilan almashtiring.", "foot.top": "Tepaga ↑", "d.index": "← Ro‘yxat", "d.prev": "← Oldingi", "d.next": "Keyingi →", "d.hint": "Bu yerga loyiha hikoyasi, suratlari va haqiqiy chizmalarini qo‘shing.", "d.typology": "Turi", "d.location": "Joylashuvi", "d.stage": "Bosqich", "sheet": "List", "scale": "Masshtab 1:500", "illus": "Ko‘rgazmali chizma", "section": "A–A kesim", "nextp": "Keyingi loyiha", "level": "balandlik", "dl.N": "SH", "dl.DOME": "GUMBAZ", "dl.PLATFORM": "PLATFORMA", "dl.AXIS": "O‘Q", "dl.ENTRY": "KIRISH", "dl.CORE": "MARKAZ", "dl.ROUTE": "YO‘NALISH", "p.observatory.title": "Toshkent rasadxonasi", "p.observatory.loc": "Toshkent, UZ", "p.observatory.stage": "Diplom loyihasi, 2026", "p.observatory.desc": "Toshkentdagi astronomik rasadxona uchun diplom loyihasi; 2026-yilda Tbilisida o‘tkaziladigan arxitektura tanlovi uchun tayyorlangan.", "p.memorial.title": "Xotira muzeyi", "p.memorial.loc": "Mongoliya", "p.memorial.stage": "Ekspozitsiya dizayni", "p.memorial.desc": "Mongoliyadagi xotira muzeyi uchun ekspozitsiya dizayni.", "m.arch": "Arxitektura", "m.exh": "Ekspozitsiya dizayni", "m.land": "Landshaft", "m.concept": "Konsept dizayn", "m.comp": "Tanlovlar", "m.res": "Tadqiqot", "dark": "Qorong‘i", "light": "Yorug‘", "brief.hello": "Salom, Mahdiyya!", "brief.body": "Ismim {nm}. Men {kind} bo‘yicha gaplashmoqchiman, muddat: {when}.", "brief.nm": "[ismingiz]", "brief.msg": "[loyiha haqida bir necha qator]", "a.brand": "Mahdiyya Komilova, tepaga", "a.prev": "Oldingi loyiha", "a.next": "Keyingi loyiha", "a.cut": "A–A kesimni siljitish", "a.filter": "Loyihalarni saralash"}};
+const I18N={"en": {"d.tools": "Tools", "video": "Video", "video.play": "Play video", "role": "Architectural Designer", "city": "Tashkent", "nav.work": "Work", "nav.contact": "Contact", "meta": "Architectural Designer · Tashkent, UZ", "tag": "Architecture that starts with a place, its memory and the people who will use it.", "selected": "Selected work", "f.all": "All", "type.Residential": "Residential", "type.Competition": "Competition", "c.h1": "Say hello,", "c.h2": "write to me.", "c.write": "Write to", "c.copy": "Copy address", "c.follow": "Follow", "a.social": "Social links", "copied": "Copied", "flashSel": "Selected", "foot.sample": "Sample content. Replace the placeholders with your projects.", "foot.top": "Back to top ↑", "d.index": "← Index", "d.prev": "← Prev", "d.next": "Next →", "d.hint": "Add the story, photos and real drawings of this project here.", "d.typology": "Typology", "d.location": "Location", "d.stage": "Stage", "sheet": "Sheet", "scale": "Scale 1:500", "illus": "Illustrative drawing", "section": "Section A–A", "nextp": "Next project", "level": "level", "dl.N": "N", "dl.DOME": "DOME", "dl.PLATFORM": "PLATFORM", "dl.AXIS": "AXIS", "dl.ENTRY": "ENTRY", "dl.CORE": "CORE", "dl.ROUTE": "ROUTE", "p.observatory.title": "Tashkent Observatory", "p.observatory.loc": "Tashkent, UZ", "p.observatory.stage": "Diploma, 2026", "p.observatory.desc": "Diploma project for an astronomical observatory in Tashkent, prepared for an architecture competition in Tbilisi, 2026.", "p.ino.title": "Dom I.N.O.", "p.ino.loc": "Mobile unit", "p.ino.stage": "Me’mor 2025", "p.ino.desc": "A compact, mobile living module for one person: an autonomous, energy-efficient and thermally insulated space. Conceived as a quiet cabin for focus and solitude, it grew into a fully functional home for year-round living in various climates.", "p.ino.area": "20.25 m²", "p.ino.len": "4.5 m", "p.ino.wid": "4.5 m", "p.ino.hgt": "5.06 m", "d.area": "Floor area", "d.height": "Height","p.greentrack.title": "Uzum GreenTrack", "p.greentrack.loc": "Mahalla roads, Uzbekistan", "p.greentrack.stage": "Concept proposal", "p.greentrack.desc": "The road that breathes. The idea came from the railway: rails at the edges, gravel and grass between them. Cars follow fixed tracks too, yet the centre of a road is barely used and still paved. Instead of solid asphalt, a mahalla road gets two narrow asphalt lanes for traffic and a green strip in the middle, protected by a recycled geogrid. It saves up to 40% of asphalt, drains rainwater naturally, cleans the air and cools the street in summer. At bends and junctions the strip gives way to ordinary asphalt. Proposed for access roads to new Uzum pickup points.", "p.gt.lanes": "2 × 3 m", "p.gt.grn": "800 mm", "p.gt.dep": "300 mm", "p.gt.load": "40 t", "p.gt.sav": "up to 40%", "d.lanes": "Lanes", "d.green": "Green strip", "d.depth": "Depth", "d.load": "Grid load", "d.save": "Asphalt saved", "p.pulse.title": "Uzum Pulse & Card", "p.pulse.loc": "Mahalla, Uzbekistan", "p.pulse.stage": "Shaharsoz 2025", "p.pulse.desc": "Winner of Shaharsoz 2025, Uzum Mahalla nomination, Small architectural forms. Uzum Pulse turns ordinary street lamps into a visual alert system: the Uzum violet changes character with the situation, and urgency is carried by rhythm as well as colour. Warm white light is the norm; a soft steady glow shares news, such as a local event; calm pulsing warns of ice, fog or poor air; fast bright flashing signals real danger. Lamps are retrofitted with programmable LED modules linked to a central system fed by emergency, weather, road and air-quality data, so it can scale from the busiest roads and danger spots. Uzum Card adds a banner shaped like an enlarged bank card on the posts beside each Uzum Bank ATM, a landmark that helps people find it.", "p.pulse.award": "Winner", "p.pulse.nom": "Uzum Mahalla", "p.pulse.ban": "800 × 500 mm", "p.pulse.mnt": "3.3 m", "d.award": "Award", "d.nom": "Nomination", "d.banner": "Banner", "d.mount": "Mounting height", "m.arch": "Architecture", "m.exh": "Exhibition design", "m.land": "Landscape", "m.concept": "Concept design", "m.comp": "Competitions", "m.res": "Research", "dark": "Dark", "light": "Light", "a.brand": "Mahdiyya Komilova, to the top", "a.prev": "Previous project", "a.next": "Next project", "a.cut": "Move section cut A to A", "a.filter": "Filter projects", "p.nexum.title": "NEXUM Pedestrian Bridge", "p.nexum.loc": "Chilanzar, Tashkent", "p.nexum.stage": "Me’mor 2025", "p.nexum.desc": "A pedestrian bridge at the crossing of Chapanata and Katartal streets in Chilanzar, where heavy traffic meets a constant flow of people. The idea began with two bridges crossing and grew into a four-way node: an arched mesh shell that joins every direction of movement and reads like a network of vessels with a heart at its centre. Competition entry for Me’mor 2025.", "d.length": "Length", "d.width": "Width", "d.struct": "Structure", "p.nexum.len": "42 m", "p.nexum.wid": "36.8 m", "p.nexum.str": "Arch, mesh shell", "render": "Render", "board": "Competition board", "openfull": "Open full size ↗", "v3d.title": "3D model", "v3d.load": "Load 3D model", "v3d.loading": "Loading…", "v3d.err": "Could not load the model", "v3d.hint": "Drag to rotate · Ctrl + scroll or pinch to zoom", "v3d.orbit": "Orbit", "v3d.close": "Close-up", "v3d.top": "Top view", "v3d.zin": "Zoom in", "v3d.zout": "Zoom out"}, "uz": {"d.tools": "Vositalar", "video": "Video", "video.play": "Videoni ko‘rish", "role": "Arxitektura dizayneri", "city": "Toshkent", "nav.work": "Ishlar", "nav.contact": "Aloqa", "meta": "Arxitektura dizayneri · Toshkent, UZ", "tag": "Arxitektura joydan, uning xotirasidan va undan foydalanadigan odamlardan boshlanadi.", "selected": "Tanlangan ishlar", "f.all": "Hammasi", "type.Residential": "Turar joy", "type.Competition": "Tanlov", "c.h1": "Salom ayting,", "c.h2": "menga yozing.", "c.write": "Yozing", "c.copy": "Manzilni nusxalash", "c.follow": "Kuzating", "a.social": "Ijtimoiy tarmoqlar", "copied": "Nusxalandi", "flashSel": "Tanlandi", "foot.sample": "Namuna kontent. Matnlarni o‘z loyihalaringiz bilan almashtiring.", "foot.top": "Tepaga ↑", "d.index": "← Ro‘yxat", "d.prev": "← Oldingi", "d.next": "Keyingi →", "d.hint": "Bu yerga loyiha hikoyasi, suratlari va haqiqiy chizmalarini qo‘shing.", "d.typology": "Turi", "d.location": "Joylashuvi", "d.stage": "Bosqich", "sheet": "List", "scale": "Masshtab 1:500", "illus": "Ko‘rgazmali chizma", "section": "A–A kesim", "nextp": "Keyingi loyiha", "level": "balandlik", "dl.N": "SH", "dl.DOME": "GUMBAZ", "dl.PLATFORM": "PLATFORMA", "dl.AXIS": "O‘Q", "dl.ENTRY": "KIRISH", "dl.CORE": "MARKAZ", "dl.ROUTE": "YO‘NALISH", "p.observatory.title": "Toshkent rasadxonasi", "p.observatory.loc": "Toshkent, UZ", "p.observatory.stage": "Diplom loyihasi, 2026", "p.observatory.desc": "Toshkentdagi astronomik rasadxona uchun diplom loyihasi; 2026-yilda Tbilisida o‘tkaziladigan arxitektura tanlovi uchun tayyorlangan.", "p.ino.title": "Dom I.N.O.", "p.ino.loc": "Ko‘chma modul", "p.ino.stage": "Me’mor 2025", "p.ino.desc": "Bir kishi uchun ixcham ko‘chma yashash moduli: avtonom, energiya tejamkor va issiqlikdan izolyatsiyalangan makon. Tinchlik va diqqat uchun kabina sifatida o‘ylab topilgan, turli iqlimlarda yil bo‘yi yashashga mos to‘liq funksional uyga aylangan.", "p.ino.area": "20,25 m²", "p.ino.len": "4,5 m", "p.ino.wid": "4,5 m", "p.ino.hgt": "5,06 m", "d.area": "Maydoni", "d.height": "Balandligi","p.greentrack.title": "Uzum GreenTrack", "p.greentrack.loc": "Mahalla yo‘llari, O‘zbekiston", "p.greentrack.stage": "Konsept taklif", "p.greentrack.desc": "Nafas oluvchi yo‘l. G‘oya temir yo‘ldan kelgan: relslar chetda, ular orasida shag‘al va o‘t. Mashinalar ham belgilangan izdan yuradi, ammo yo‘lning o‘rtasi deyarli ishlatilmasa ham asfaltlanadi. Mahalla yo‘lida butun asfalt o‘rniga transport uchun ikkita tor asfalt yo‘l, o‘rtasida esa qayta ishlangan georeshyotka bilan himoyalangan yashil yo‘lak bo‘ladi. Bu asfaltning 40% gacha qismini tejaydi, yomg‘ir suvini tabiiy singdiradi, havoni tozalaydi va yozda ko‘chani sovutadi. Burilish va chorrahalarda yo‘lak oddiy asfaltga o‘tadi. Uzumning yangi buyurtma topshirish punktlariga olib boruvchi yo‘llar uchun taklif etiladi.", "p.gt.lanes": "2 × 3 m", "p.gt.grn": "800 mm", "p.gt.dep": "300 mm", "p.gt.load": "40 t", "p.gt.sav": "40% gacha", "d.lanes": "Polosalar", "d.green": "Yashil yo‘lak", "d.depth": "Chuqurligi", "d.load": "Panjara yuki", "d.save": "Asfalt tejami", "p.pulse.title": "Uzum Pulse & Card", "p.pulse.loc": "Mahalla, O‘zbekiston", "p.pulse.stage": "Shaharsoz 2025", "p.pulse.desc": "Shaharsoz 2025 tanlovining Uzum Mahalla nominatsiyasi (kichik arxitektura shakllari) g‘olibi. Uzum Pulse oddiy ko‘cha chiroqlarini vizual ogohlantirish tizimiga aylantiradi: Uzum binafsha rangi vaziyatga qarab xarakterini o‘zgartiradi, xavf darajasi esa rang bilan birga ritm orqali ham beriladi. Iliq oq yorug‘lik oddiy holatni, mayin doimiy nur yangilikni (masalan, mahalladagi tadbirni), sokin pulslanish muz, tuman yoki yomon havo haqida ogohlantirishni, tez yorqin miltillash esa haqiqiy xavfni bildiradi. Chiroqlarga dasturlanadigan LED modullar o‘rnatilib, favqulodda holatlar, ob-havo, yo‘l va havo sifati ma’lumotlari keladigan markaziy tizimga ulanadi, shuning uchun tizimni eng gavjum yo‘llar va xavfli joylardan boshlab kengaytirish mumkin. Uzum Card har bir Uzum Bank bankomati yonidagi ustunlarga bank kartasining kattalashtirilgan nusxasi shaklidagi banner qo‘shadi, bu bankomatni topishga yordam beradigan mo‘ljal.", "p.pulse.award": "G‘olib", "p.pulse.nom": "Uzum Mahalla", "p.pulse.ban": "800 × 500 mm", "p.pulse.mnt": "3,3 m", "d.award": "Mukofot", "d.nom": "Nominatsiya", "d.banner": "Banner", "d.mount": "O‘rnatish balandligi", "m.arch": "Arxitektura", "m.exh": "Ekspozitsiya dizayni", "m.land": "Landshaft", "m.concept": "Konsept dizayn", "m.comp": "Tanlovlar", "m.res": "Tadqiqot", "dark": "Qorong‘i", "light": "Yorug‘", "a.brand": "Mahdiyya Komilova, tepaga", "a.prev": "Oldingi loyiha", "a.next": "Keyingi loyiha", "a.cut": "A–A kesimni siljitish", "a.filter": "Loyihalarni saralash", "p.nexum.title": "NEXUM piyodalar ko‘prigi", "p.nexum.loc": "Chilonzor, Toshkent", "p.nexum.stage": "Me’mor 2025", "p.nexum.desc": "Chilonzordagi Chapanata va Katartal ko‘chalari kesishmasida piyodalar ko‘prigi: transport oqimi kuchli joyda odamlar uchun xavfsiz va qulay o‘tish. G‘oya ikki kesishuvchi ko‘prikdan boshlanib, to‘rt yo‘nalishli tugunga aylandi: barcha harakat yo‘nalishlarini birlashtiruvchi, markazida “yuragi” bor qon tomirlari tarmog‘iga o‘xshash arkali to‘rsimon qobiq. Me’mor 2025 tanlovi uchun loyiha.", "d.length": "Uzunligi", "d.width": "Kengligi", "d.struct": "Konstruksiya", "p.nexum.len": "42 m", "p.nexum.wid": "36,8 m", "p.nexum.str": "Arka, to‘rsimon qobiq", "render": "Render", "board": "Tanlov planshetiga", "openfull": "To‘liq o‘lchamda ochish ↗", "v3d.title": "3D model", "v3d.load": "3D modelni yuklash", "v3d.loading": "Yuklanmoqda…", "v3d.err": "Modelni yuklab bo‘lmadi", "v3d.hint": "Aylantirish uchun suring · yaqinlashtirish: Ctrl + g‘ildirak yoki ikki barmoq", "v3d.orbit": "Aylanish", "v3d.close": "Yaqindan", "v3d.top": "Yuqoridan ko‘rinish", "v3d.zin": "Yaqinlashtirish", "v3d.zout": "Uzoqlashtirish"}};
 let lang='en';
 try{const sv=localStorage.getItem('mk-lang');if(sv==='uz'||sv==='en')lang=sv;else if(/^uz/i.test(navigator.language||''))lang='uz'}catch(e){}
 const t=k=>(I18N[lang]&&I18N[lang][k])||I18N.en[k]||k;
@@ -2003,9 +2015,9 @@ function applyLang(){
   $$('[data-i18n-ph]').forEach(el=>{el.placeholder=t(el.dataset.i18nPh)});
   $$('[data-i18n-aria]').forEach(el=>{el.setAttribute('aria-label',t(el.dataset.i18nAria))});
   $$('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.lang===lang?'true':'false'));
-  $$('#copyAddr,#copyBrief').forEach(b=>{delete b.dataset.o});
-  $('#themeLabel').textContent=effective()==='dark'?t('light'):t('dark');
-  buildStatement();buildMarquee();renderRows(curFilter,false);compose();
+  $$('#copyAddr').forEach(b=>{delete b.dataset.o});
+  $$('#themeLabel,#themeLabel2').forEach(e=>e.textContent=effective()==='dark'?t('light'):t('dark'));
+  buildMarquee();renderRows(curFilter,false);
   if(curP){const v=cut.value;fillDetail(curP);cut.value=v;updateCut()}
 }
 $$('.lang button').forEach(b=>b.addEventListener('click',()=>{
@@ -2051,9 +2063,13 @@ function dMem(){
 const hObs=x=>{const d=Math.abs(x-400);if(d<170)return 26+Math.sqrt(170*170-d*d)*.5;if(d<250)return 26;return 8+4*Math.sin(x/37)};
 const hMem=x=>(x<100||x>700)?10:clamp(100-Math.floor(Math.abs(x-400)/75)*14,30,100);
 
+const TOOL_ICON={"Blender": "M12.51 13.214c.046-.8.438-1.506 1.03-2.006a3.424 3.424 0 0 1 2.212-.79c.85 0 1.631.3 2.211.79.592.5.983 1.206 1.028 2.005.045.823-.285 1.586-.865 2.153a3.389 3.389 0 0 1-2.374.938 3.393 3.393 0 0 1-2.376-.938c-.58-.567-.91-1.33-.865-2.152M7.35 14.831c.006.314.106.922.256 1.398a7.372 7.372 0 0 0 1.593 2.757 8.227 8.227 0 0 0 2.787 2.001 8.947 8.947 0 0 0 3.66.76 8.964 8.964 0 0 0 3.657-.772 8.285 8.285 0 0 0 2.785-2.01 7.428 7.428 0 0 0 1.592-2.762 6.964 6.964 0 0 0 .25-3.074 7.123 7.123 0 0 0-1.016-2.779 7.764 7.764 0 0 0-1.852-2.043h.002L13.566 2.55l-.02-.015c-.492-.378-1.319-.376-1.86.002-.547.382-.609 1.015-.123 1.415l-.001.001 3.126 2.543-9.53.01h-.013c-.788.001-1.545.518-1.695 1.172-.154.665.38 1.217 1.2 1.22V8.9l4.83-.01-8.62 6.617-.034.025c-.813.622-1.075 1.658-.563 2.313.52.667 1.625.668 2.447.004L7.414 14s-.069.52-.063.831zm12.09 1.741c-.97.988-2.326 1.548-3.795 1.55-1.47.004-2.827-.552-3.797-1.538a4.51 4.51 0 0 1-1.036-1.622 4.282 4.282 0 0 1 .282-3.519 4.702 4.702 0 0 1 1.153-1.371c.942-.768 2.141-1.183 3.396-1.185 1.256-.002 2.455.41 3.398 1.175.48.391.87.854 1.152 1.367a4.28 4.28 0 0 1 .522 1.706 4.236 4.236 0 0 1-.239 1.811 4.54 4.54 0 0 1-1.035 1.626", "Revit": "M24 22.665H2.994c-.519 0-.838-.293-.835-.723.001.042.002-.148.003-.463.142-.083.283-.165.427-.247l.078-.045.07-.058.015-.013.127-.078 1.294-.804h1.134c3.35 0 11.817 0 16.548.007.159 0 .631 0 1.002-.371.371-.372.37-.853.37-1.011-.008-2.057-.001-4.109.005-6.16.008-2.39.016-4.86 0-7.298v-.063l.61-.007c.169-.003.143.197.143.296.014 5.68-.02 11.36.015 17.038zM14.326 8.982c.006-.281.006-.56.006-.859-.009-.5-.395-1.055-.916-1.055-.435 0-.919.006-1.432.006v3.01h1.432c.52 0 .9-.584.91-1.102zM3.887 19.234 3.853 1.363l.007-.025.026-.003h17.313c.51.232.943.56 1.033 1.16.023 1.052 0 1.896 0 2.854.001.023-.002.036 0 .059.03 4.489-.022 8.963-.005 13.453 0 .285-.072.38-.37.38-5.99-.008-17.97-.007-17.97-.007zm5.624-3.971h2.395l.057-.051v-3.5c.316.001.57-.005.787-.005.075 0 .348.075.449.286.36.757.692 1.531 1.125 2.25.583.967 1.704 1.204 2.469 1.204.528 0 .528-.024.528-.245 0-.423-.006-.935-.006-1.374-.403-.039-.734-.163-.929-.541-.362-.705-.74-1.401-1.119-2.114.248-.072.218-.057.302-.092.859-.357 1.139-.951 1.213-1.71.05-.503.059-1.144.025-1.395-.112-.833-.378-1.454-1.036-1.932-.773-.562-1.678-.657-2.582-.687a62.395 62.395 0 0 0-3.678.012v9.894zm-5.658-13.9C1.631 2.64.98 3.087.223 3.513.025 3.622 0 3.895 0 4.1l.02 17.45c.575-.357 3.293-1.96 3.867-2.316L3.853 1.363z", "Rhinoceros": "M6.823 3.103c-.1 0-.213.006-.34.017-.511.044-1.25.18-1.802.329a6.269 6.269 0 0 0-1.15.42c-.231.112-.33.178-.354.273-.023.094.028.217.16.436s.346.533.535.961c.19.428.356.97.361 1.651.006.68-.149 1.5-.245 1.962-.096.462-.133.568-.227.618-.094.05-.245.044-.525-.021-.281-.065-.69-.187-1.1-.259-.41-.072-.819-.093-1.122-.038-.304.056-.504.189-.645.369-.14.18-.224.406-.282.75A6.957 6.957 0 0 0 0 11.687c.005.317.047.49.136.584.088.094.223.109.492.054s.672-.18 1.224-.215a6.302 6.302 0 0 1 1.94.202c.685.182 1.353.49 1.95.93.598.438 1.127 1.007 1.566 1.593.438.586.787 1.189 1.004 1.541.217.353.304.455.372.42.068-.035.117-.207.145-.417a3.141 3.141 0 0 0-.02-.848 7.467 7.467 0 0 0-.32-1.365 5.617 5.617 0 0 0-.495-1.018c-.146-.247-.241-.408-.245-.51-.004-.103.085-.148.51-.315.424-.167 1.185-.457 1.958-.808.772-.351 1.556-.764 2.042-1.106.486-.341.674-.61.724-.937.05-.326-.039-.71-.16-1.076a6.93 6.93 0 0 0-.529-1.193A13.696 13.696 0 0 0 11.28 5.6a9.187 9.187 0 0 0-1.1-1.236c-.282-.255-.421-.31-.51-.29-.09.02-.131.115-.168.47-.037.356-.07.973-.144 1.559a7.468 7.468 0 0 1-.432 1.773 12.543 12.543 0 0 1-.99 1.982c-.388.64-.803 1.212-1.054 1.462-.25.25-.336.18-.477.064l-.486-.4c-.15-.125-.253-.213-.273-.293-.02-.08.045-.15.27-.448.227-.299.615-.825.96-1.478a7.75 7.75 0 0 0 .796-2.282 10.1 10.1 0 0 0 .095-2.338c-.044-.564-.124-.77-.306-.896-.137-.095-.332-.146-.638-.146zm6.48 7.034h-.012c-.084.01-.192.112-.415.294a6.86 6.86 0 0 1-1.017.7c-.458.257-1.038.507-1.51.734-.47.226-.831.429-1.004.712-.172.283-.155.648.04.85.194.204.566.246.883.259.318.013.58-.002.826.087.246.09.475.285.764.516.288.23.637.498.925.561.289.063.518-.079.766-.202.249-.124.516-.23.888-.225.371.005.847.12 1.318.37.47.248.938.63 1.184.866.247.236.272.327.245.362-.028.036-.108.018-.304-.14-.196-.157-.508-.454-.917-.688-.41-.234-.916-.404-1.4-.391-.482.013-.94.21-1.23.55-.29.34-.412.822-.546 1.164-.133.341-.28.543-.47.617-.19.074-.424.02-.703-.099-.28-.12-.604-.307-.874-.442-.269-.136-.484-.22-.62-.353-.136-.132-.195-.31-.203-.571-.01-.26.032-.6.05-.853.02-.25.018-.413-.038-.56a1.079 1.079 0 0 0-.232-.35c-.07-.07-.099-.075-.113-.058-.014.017-.012.058.01.158.023.1.067.26.05.581-.019.321-.098.803-.16 1.17-.062.366-.107.618-.02.808.087.191.306.322.707.54.4.22.982.527 1.518.855.537.327 1.027.673 1.562 1.089.534.415 1.112.9 1.5 1.238.39.339.588.532.742.59.154.059.264-.018.307-.138.044-.12.023-.285-.014-.429a1.174 1.174 0 0 0-.24-.46 4.92 4.92 0 0 0-.68-.704c-.287-.243-.614-.463-.803-.614-.19-.151-.242-.233-.212-.259.03-.026.14.004.302.108.162.103.375.28.612.459.237.178.499.356.733.584.235.228.443.506.583.706.14.201.214.324.294.372.08.049.165.022.277-.05a3.03 3.03 0 0 0 .426-.355c.178-.169.398-.393.551-.633.154-.24.242-.496.299-.772.056-.276.08-.572.247-.862.167-.29.476-.574.994-1.025.518-.451 1.244-1.07 1.891-1.664.648-.595 1.216-1.165 1.696-1.802.479-.638.87-1.342 1.067-1.743.199-.4.205-.498.14-.526-.063-.027-.198.015-.61.313-.414.297-1.106.849-1.886 1.43-.781.58-1.65 1.19-2.336 1.569-.686.378-1.19.524-1.55.562-.361.037-.58-.034-.724-.11-.143-.077-.21-.158-.224-.241-.013-.084.03-.17.135-.275.106-.106.277-.232.447-.392.17-.16.338-.354.468-.556.13-.202.22-.411.261-.592.042-.181.034-.333-.04-.376-.074-.043-.215.023-.376.11-.162.086-.343.192-.593.3a2.683 2.683 0 0 1-.92.235 1.626 1.626 0 0 1-1.088-.313c-.343-.26-.635-.71-.866-1.147-.23-.438-.398-.865-.512-1.12-.108-.242-.168-.33-.246-.33zm-2.215 4.075a.422.422 0 0 0-.294.115c-.094.086-.145.2-.034.338.112.137.385.297.636.469.252.172.481.357.666.42.184.064.323.006.402-.096.08-.102.1-.247-.003-.404-.103-.157-.327-.325-.564-.481-.238-.157-.488-.302-.681-.346a.574.574 0 0 0-.128-.015zm.252.208c.025 0 .053.003.083.01.118.026.272.115.418.211.145.096.283.2.333.289.05.089.014.163-.048.216a.255.255 0 0 1-.247.053c-.1-.031-.216-.126-.36-.219-.145-.093-.319-.184-.387-.268-.068-.084-.031-.162.029-.218a.26.26 0 0 1 .18-.074zm4.778 3.728c.211-.008.42.06.602.24.183.178.34.467.383.732.042.265-.03.505-.125.692a1.58 1.58 0 0 1-.289.397c-.074.074-.109.095-.14.095h-.003c-.033-.001-.062-.023-.208-.171a7.39 7.39 0 0 1-.573-.642c-.165-.22-.232-.383-.263-.568-.032-.185-.027-.39.082-.536.109-.146.323-.23.534-.239zm.093 1.111a.258.258 0 0 0-.153.046c-.058.041-.105.113-.093.185.012.073.085.146.174.255.089.11.195.255.264.335.068.08.1.093.127.091.029-.002.054-.018.086-.048a.349.349 0 0 0 .094-.157.518.518 0 0 0 .002-.316.668.668 0 0 0-.218-.282.476.476 0 0 0-.283-.109z"};
 const P=[
-  {slug:'observatory',type:'Competition',draw:dObs,h:hObs},
-  {slug:'memorial',type:'Cultural',draw:dMem,h:hMem}
+  {slug:'observatory',type:'Competition',draw:dObs,h:hObs,img:'img/obs-5.jpg',gallery:['img/obs-3.jpg','img/obs-1.jpg','img/obs-2.jpg','img/obs-4.jpg'],pos:{'img/obs-3.jpg':'50% 92%'},boards:['img/obs-board-1.jpg','img/obs-board-2.jpg','img/obs-board-3.jpg'],video:'KTZqypMyLt8',tools:[['B','Blender'],['D5','D5 Render'],['R','Revit']]},
+  {slug:'ino',type:'Competition',draw:dMem,h:hMem,img:'img/ino-1.jpg',gallery:['img/ino-2.jpg','img/ino-3.jpg','img/ino-4.jpg','img/ino-5.jpg'],board:'img/ino-board.jpg',tools:[['B','Blender'],['R','Revit']],extra:[['d.area','p.ino.area'],['d.length','p.ino.len'],['d.width','p.ino.wid'],['d.height','p.ino.hgt']]},
+  {slug:'nexum',type:'Competition',model:'model/nexum-glb.js',img:'img/nexum-sunset-1.jpg',gallery:['img/nexum-sunset-2.jpg','img/nexum-night-1.jpg','img/nexum-night-2.jpg'],board:'img/nexum-board-en.jpg',video:'Zhd3_oxsk2k',tools:[['Rh','Rhinoceros'],['En','Enscape'],['D5','D5 Render']],extra:[['d.length','p.nexum.len'],['d.width','p.nexum.wid'],['d.struct','p.nexum.str']]},
+  {slug:'greentrack',type:'Competition',img:'img/gt-1.jpg',gallery:['img/gt-2.jpg'],board:'img/gt-board.jpg',tools:[['D5','D5 Render'],['R','Revit'],['B','Blender']],extra:[['d.lanes','p.gt.lanes'],['d.green','p.gt.grn'],['d.depth','p.gt.dep'],['d.load','p.gt.load'],['d.save','p.gt.sav']]},
+  {slug:'pulse',type:'Competition',img:'img/pulse-1.jpg',gallery:['img/pulse-2.jpg'],board:'img/pulse-board.jpg',tools:[['D5','D5 Render'],['R','Revit'],['B','Blender']],extra:[['d.award','p.pulse.award'],['d.nom','p.pulse.nom'],['d.banner','p.pulse.ban'],['d.mount','p.pulse.mnt']]}
 ];
 const ARROW='<svg class="c-arrow" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M5 17L17 5M7 5h10v10"/></svg>';
 
@@ -2084,8 +2100,7 @@ buildMarquee();
 const rows=$('#rows'),cnt=$('#cnt');
 function renderRows(f,animate){
   const list=P.filter(p=>f==='All'||p.type===f);
-  rows.innerHTML=list.map((p,i)=>'<li class="rli'+(animate?' pop':'')+'" style="--i:'+i+'"><a class="row" href="#'+p.slug+'" data-slug="'+p.slug+'"><span class="c-n m">'+String(P.indexOf(p)+1).padStart(2,'0')+'</span><span class="c-t">'+pt(p,'title')+'</span><span class="c-type m">'+t('type.'+p.type)+'</span><span class="c-loc m">'+pt(p,'loc')+'</span><span class="c-stage m">'+pt(p,'stage')+'</span>'+ARROW+'</a></li>').join('')
-   +'<li class="rli cta'+(animate?' pop':'')+'" style="--i:'+list.length+'"><a class="row" href="#contact"><span class="c-n m">+</span><span class="c-t">'+t('row.cta')+'</span><span class="c-type m">'+t('row.brief')+'</span><span class="c-loc m">'+t('row.any')+'</span><span class="c-stage m">'+t('row.talk')+'</span>'+ARROW+'</a></li>';
+  rows.innerHTML=list.map((p,i)=>'<li class="rli'+(animate?' pop':'')+'" style="--i:'+i+'"><a class="row" href="#'+p.slug+'" data-slug="'+p.slug+'"><span class="c-n m">'+String(P.indexOf(p)+1).padStart(2,'0')+'</span><span class="c-t">'+pt(p,'title')+'</span><span class="c-type m">'+t('type.'+p.type)+'</span><span class="c-loc m">'+pt(p,'loc')+'</span><span class="c-stage m">'+pt(p,'stage')+'</span>'+ARROW+'</a></li>').join('');
   cnt.textContent=String(list.length).padStart(2,'0');
 }
 $('#filters').addEventListener('click',e=>{
@@ -2101,7 +2116,7 @@ rows.addEventListener('pointerover',e=>{
   if(!fine)return;
   const a=e.target.closest('.row');if(!a)return;
   const p=P.find(x=>x.slug===a.dataset.slug);
-  if(p){peek.innerHTML='<svg class="dwg mini" viewBox="0 0 800 600" aria-hidden="true">'+p.draw()+'</svg>';peek.classList.add('on')}
+  if(p){peek.innerHTML=p.img?'<img src="'+p.img+'" alt="">':'<svg class="dwg mini" viewBox="0 0 800 600" aria-hidden="true">'+p.draw()+'</svg>';peek.classList.add('on')}
   else peek.classList.remove('on');
   cur.classList.add('big');
 });
@@ -2110,41 +2125,23 @@ rows.addEventListener('pointerout',e=>{
   if(!to){peek.classList.remove('on');cur.classList.remove('big')}
 });
 
-/* ---------- about ---------- */
-const st=$('#statement');let sw=[];
-function buildStatement(){st.innerHTML=t('statement').split(/\s+/).map(w=>'<span class="w">'+w+'</span>').join(' ');sw=$$('.w',st)}
-buildStatement();
-$$('.svc-btn').forEach(b=>b.addEventListener('click',()=>{
-  const open=b.getAttribute('aria-expanded')==='true';
-  $$('.svc-btn').forEach(x=>x.setAttribute('aria-expanded','false'));
-  b.setAttribute('aria-expanded',open?'false':'true');
-}));
-$('#b1').setAttribute('aria-expanded','true');
-
 /* ---------- time ---------- */
 const fmt=new Intl.DateTimeFormat('en-GB',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Tashkent',hour12:false});
-function clock(){const t=fmt.format(new Date());$('#tz').textContent='TAS '+t;$('#tz2').textContent=t+' (UTC+5)'}
+function clock(){const t=fmt.format(new Date());$('#tz').textContent='TAS '+t}
 clock();setInterval(clock,20000);
 
 /* ---------- theme ---------- */
 let topoReady=false;
 const root=document.documentElement;
 const effective=()=>root.dataset.theme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
-const syncTheme=()=>{$('#themeLabel').textContent=effective()==='dark'?t('light'):t('dark');colorsDirty=true;if(topoReady)topoTheme()};
+const syncTheme=()=>{$$('#themeLabel,#themeLabel2').forEach(e=>e.textContent=effective()==='dark'?t('light'):t('dark'));colorsDirty=true;if(topoReady)topoTheme()};
 let colorsDirty=true;
 try{const s=localStorage.getItem('mk-theme');if(s==='dark'||s==='light')root.dataset.theme=s}catch(e){}
-$('#theme').addEventListener('click',()=>{const n=effective()==='dark'?'light':'dark';root.dataset.theme=n;try{localStorage.setItem('mk-theme',n)}catch(e){}syncTheme()});
+['#theme','#theme2'].forEach(q=>$(q).addEventListener('click',()=>{const n=effective()==='dark'?'light':'dark';root.dataset.theme=n;try{localStorage.setItem('mk-theme',n)}catch(e){}syncTheme()}));
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change',syncTheme);
 syncTheme();
 
 /* ---------- contact ---------- */
-const out=$('#out'),form=$('#brief');let kind='concept';
-function compose(){
-  const nm=$('#nm').value.trim()||t('brief.nm'),msg=$('#msg').value.trim()||t('brief.msg'),w=$('#when').selectedOptions[0];
-  out.value=t('brief.hello')+'\n\n'+t('brief.body').replace('{nm}',nm).replace('{kind}',t('k.'+kind)).replace('{when}',w?w.textContent:'')+'\n\n'+msg+'\n';
-}
-$('#kinds').addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;$$('.chip',$('#kinds')).forEach(c=>c.setAttribute('aria-pressed',c===b?'true':'false'));kind=b.dataset.k;compose()});
-form.addEventListener('input',compose);form.addEventListener('change',compose);form.addEventListener('submit',e=>e.preventDefault());compose();
 function flash(b,t){const o=b.dataset.o||b.textContent;b.dataset.o=o;b.textContent=t;setTimeout(()=>{b.textContent=o},1700)}
 async function copyText(text,btn,sel){
   try{await navigator.clipboard.writeText(text);flash(btn,t('copied'));return}catch(e){}
@@ -2152,14 +2149,13 @@ async function copyText(text,btn,sel){
   flash(btn,t('flashSel'));
 }
 $('#copyAddr').addEventListener('click',e=>{const el=$('#addr');copyText(el.textContent,e.currentTarget,()=>{const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r)})});
-$('#copyBrief').addEventListener('click',e=>copyText(out.value,e.currentTarget,()=>{out.focus();out.select()}));
 
 /* ---------- detail ---------- */
 const detail=$('#detail'),plan=$('#plan'),prof=$('#profile'),cut=$('#cut'),wipeEl=$('#wipe');
 let current=null,busy=false,pending=false,opener=null,curP=null;
 const cutG='<g id="cutG"><line class="ac" x1="0" y1="0" x2="0" y2="600" stroke-dasharray="10 6"/><rect class="fa" x="-13" y="6" width="26" height="26"/><text class="tx onac" x="-5" y="25">A</text><rect class="fa" x="-13" y="568" width="26" height="26"/><text class="tx onac" x="-5" y="587">A</text></g>';
 function updateCut(){
-  if(!curP)return;
+  if(!curP||!curP.h)return;
   const x=+cut.value,h=curP.h(x),m=(x-40)/720*60,lev=h*.12;
   const g=$('#cutG');if(g)g.setAttribute('transform','translate('+x+' 0)');
   const pl=$('#pmLine'),pd=$('#pmDot');
@@ -2167,13 +2163,54 @@ function updateCut(){
   if(pd){pd.setAttribute('cx',x);pd.setAttribute('cy',120-h)}
   $('#cutOut').textContent='x '+m.toFixed(1)+' m  ·  '+t('level')+' +'+lev.toFixed(1)+' m';
 }
+let v3d=null,v3dBusy=false,viewerSlug=null;
+const loadScript=src=>new Promise((ok,no)=>{const s=document.createElement('script');s.src=src;s.onload=ok;s.onerror=()=>no(new Error(src));document.head.appendChild(s)});
+function markView(v){$$('#v3dBtns [data-v]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===v?'true':'false'))}
+function destroyViewer(){
+  if(v3d){try{v3d.destroy()}catch(e){}v3d=null}
+  const st=$('#v3dStage');if(!st)return;
+  st.classList.remove('live');$('#v3dBtns').hidden=true;$('#v3dLoad').hidden=false;$('#v3dLoad').disabled=false;$('#v3dLoadT').dataset.i18n='v3d.load';$('#v3dLoadT').textContent=t('v3d.load');markView('orbit');
+}
+async function startViewer(){
+  const p=curP;if(!p||!p.model||v3d||v3dBusy)return;
+  v3dBusy=true;const lb=$('#v3dLoad'),lt=$('#v3dLoadT');lb.disabled=true;lt.dataset.i18n='v3d.loading';lt.textContent=t('v3d.loading');
+  try{
+    if(!window.MKViewer)await loadScript('js/viewer.js');
+    if(!window.__NEXUM_GLB)await loadScript(p.model);
+    if(curP!==p)return;
+    $('#v3dStage').classList.add('live');
+    v3d=await window.MKViewer.create($('#v3dStage'),{data:window.__NEXUM_GLB,reduce:reduce(),label:pt(p,'title')+' \u2014 3D',onInteract:()=>markView(null)});
+    $('#v3dStage').classList.add('live');lb.hidden=true;$('#v3dBtns').hidden=false;markView('orbit');
+  }catch(e){$('#v3dStage').classList.remove('live');lt.dataset.i18n='v3d.err';lt.textContent=t('v3d.err');lb.disabled=false}
+  finally{v3dBusy=false}
+}
+$('#v3dLoad').addEventListener('click',startViewer);
+
+$('#v3dBtns').addEventListener('click',e=>{
+  const b=e.target.closest('button');if(!b||!v3d)return;
+  if(b.dataset.z){v3d.zoom(b.dataset.z==='in'?.7:1.4);return}
+  const v=b.dataset.v;if(v==='orbit'){v3d.orbit(true)}else{v3d.set(v)}markView(v);
+});
 function fillDetail(p){
   curP=p;const i=P.indexOf(p),n=P.length,prev=P[(i+n-1)%n],next=P[(i+1)%n];
   $('#dType').textContent=t('type.'+p.type);$('#dTitle').textContent=pt(p,'title');$('#dDesc').textContent=pt(p,'desc');
-  $('#dFacts').innerHTML='<div><dt>'+t('d.typology')+'</dt><dd>'+t('type.'+p.type)+'</dd></div><div><dt>'+t('d.location')+'</dt><dd>'+pt(p,'loc')+'</dd></div><div><dt>'+t('d.stage')+'</dt><dd>'+pt(p,'stage')+'</dd></div>';
+  $('#dFacts').innerHTML='<div><dt>'+t('d.typology')+'</dt><dd>'+t('type.'+p.type)+'</dd></div><div><dt>'+t('d.location')+'</dt><dd>'+pt(p,'loc')+'</dd></div><div><dt>'+t('d.stage')+'</dt><dd>'+pt(p,'stage')+'</dd></div>'+(p.extra||[]).map(e=>'<div><dt>'+t(e[0])+'</dt><dd>'+t(e[1])+'</dd></div>').join('')+(p.tools?'<div><dt>'+t('d.tools')+'</dt><dd><ul class="tools-l">'+p.tools.map(x=>'<li>'+(TOOL_ICON[x[1]]?'<svg class="tic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="'+TOOL_ICON[x[1]]+'"/></svg>':'<b aria-hidden="true">'+x[0]+'</b>')+x[1]+'</li>').join('')+'</ul></dd></div>':'');
   $('#dCount').textContent=String(i+1).padStart(2,'0')+' / '+String(n).padStart(2,'0');
   $('#tbSheet').textContent=t('sheet')+' A-10'+(i+1);
   $('#dPrev').href='#'+prev.slug;$('#dNext').href='#'+next.slug;$('#dNextBig').href='#'+next.slug;$('#dNextTitle').textContent=pt(next,'title')+' \u2192';
+  const photo=!!p.img;
+  $('#dDraw').hidden=photo;$('#dPhoto').hidden=!photo;$('#dMore').hidden=!photo;$('.d-hint').hidden=photo;
+  if(photo){
+    const ttl=pt(p,'title'),fig=(src,k)=>'<figure><img'+(p.pos&&p.pos[src]?' style="object-position:'+p.pos[src]+'"':'')+' src="'+src+'" alt="'+ttl+' \u2014 '+t('render')+' '+k+'" loading="lazy" decoding="async"><figcaption class="m"><span>'+t('render')+' '+k+'</span></figcaption></figure>';
+    $('#dPhoto').innerHTML='<figure class="ph"><img src="'+p.img+'" alt="'+ttl+' \u2014 '+t('render')+' 01" decoding="async"><figcaption class="m"><span>'+t('render')+' 01</span><span>'+ttl+'</span></figcaption></figure>';
+    $('#dViewer').hidden=!p.model;if(viewerSlug!==p.slug){destroyViewer();viewerSlug=p.slug}
+    const vid=p.video?'<div class="vidw"><div class="v3d-bar m"><span>'+t('video')+'</span><a href="https://youtu.be/'+p.video+'" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:3px">YouTube \u2197</a></div><div class="vid" data-vid="'+p.video+'"><img src="https://i.ytimg.com/vi/'+p.video+'/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><a class="vlink" href="https://www.youtube.com/watch?v='+p.video+'" target="_blank" rel="noopener" aria-label="'+t('video.play')+' (YouTube)"><span class="pl m"><i></i>'+t('video.play')+' \u2197</span></a></div></div>':'';
+    $('#dMoreBody').innerHTML='<div class="gal'+(p.gallery.length===1?' g1':p.gallery.length%2===0?' g2':'')+'">'+p.gallery.map((g,j)=>fig(g,String(j+2).padStart(2,'0'))).join('')+'</div>'
+      +(p.board?'<div class="bd"><div class="bd-t m"><span>'+t('board')+'</span><a href="'+p.board+'" target="_blank" rel="noopener">'+t('openfull')+'</a></div><a class="zoom" href="'+p.board+'" target="_blank" rel="noopener" aria-label="'+t('openfull')+'"><img src="'+p.board+'" alt="'+t('board')+' \u2014 '+ttl+'" loading="lazy" decoding="async"></a></div>':'')+(p.boards?'<div class="bds"><div class="bd-t m"><span>'+t('board')+'</span></div><div class="bds-g">'+p.boards.map((b,k)=>'<a class="zoom" href="'+b+'" target="_blank" rel="noopener" aria-label="'+t('openfull')+' '+(k+1)+'"><img src="'+b+'" alt="'+t('board')+' '+(k+1)+' \u2014 '+ttl+'" loading="lazy" decoding="async"></a>').join('')+'</div></div>':'')+(vid?'<div style="height:clamp(28px,4vw,56px)"></div>'+vid:'');
+    return;
+  }
+  destroyViewer();viewerSlug=null;
+  $('#dDraw').hidden=false;
   plan.innerHTML=p.draw()+cutG;
   $$('.dr',plan).forEach(el=>{try{el.style.setProperty('--len',Math.ceil(el.getTotalLength())+1)}catch(e){}});
   let pts=[];for(let x=0;x<=800;x+=8)pts.push(x+','+(120-p.h(x)).toFixed(1));
@@ -2188,7 +2225,7 @@ function openDetail(){
   try{$('#dClose').focus({preventScroll:true})}catch(e){}
 }
 function closeDetail(){
-  detail.hidden=true;root.classList.remove('lock');$('#home').inert=false;$('#topbar').inert=false;$('#foot').inert=false;curP=null;
+  destroyViewer();viewerSlug=null;detail.hidden=true;root.classList.remove('lock');$('#home').inert=false;$('#topbar').inert=false;$('#foot').inert=false;curP=null;
   if(location.hash==='#work'){const w=$('#work');if(w)w.scrollIntoView({behavior:'instant'})}
   if(opener&&document.contains(opener)){try{opener.focus({preventScroll:true})}catch(e){}}
 }
@@ -2332,10 +2369,6 @@ function tick(now){
       mqX=(mqX+mqDir*(.7+Math.min(Math.abs(vel),60)*.35)+mqHalf)%mqHalf;
       mq.style.transform='translate3d('+(-mqX).toFixed(1)+'px,0,0)';
     }
-    // about words
-    const sr=st.getBoundingClientRect();
-    const pr=clamp((vh*.82-sr.top)/(sr.height+vh*.25),0,1),N=sw.length;
-    sw.forEach((w,i)=>w.classList.toggle('on',pr*(N+4)>i+1));
   }
   // cursor + peek
   if(fine&&mx>=0){
@@ -2356,7 +2389,7 @@ setTimeout(()=>$$('.rv').forEach(el=>el.classList.add('in')),3000);
 const navIO=new IntersectionObserver(es=>es.forEach(e=>{
   if(e.isIntersecting)$$('.nav a').forEach(a=>a.setAttribute('aria-current',a.dataset.sec===e.target.id?'true':'false'));
 }),{rootMargin:'-45% 0px -50% 0px'});
-['work','about','contact'].forEach(id=>navIO.observe($('#'+id)));
+['work','contact'].forEach(id=>navIO.observe($('#'+id)));
 
 /* ---------- boot ---------- */
 function layout(){fsize();fixWidths();mqMeasure();if(!gpu&&reduce())drawField(2,0,0,false)}
@@ -2370,5 +2403,4 @@ requestAnimationFrame(tick);
 })();
 </script>
 
-</body>
-</html>
+</body></html>
